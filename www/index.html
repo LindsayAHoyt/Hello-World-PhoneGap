@@ -36,14 +36,18 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
 
+                <button onclick="myColorFunction()">My Text</button>
+
+                <p id="hi"></p>
+
                 <script type="text/javascript">
-                    function changeColorFunct() {
+                    function myColorFunction() {
                         $color = ["red", "green", "purple", "blue", "yellow", "brown", "white", "black"];
 
-                        return $color;
+                        var str = "Hello World!";
+                        var result = str.fontcolor($color);
+                        document.getElementById("hi").innerHTML = result;
                     }
-
-                    document.write('<button onclick="changeColorFunct()" style="color: $color;">Hello World</button>');
                 </script>
             </div>
         </div>
